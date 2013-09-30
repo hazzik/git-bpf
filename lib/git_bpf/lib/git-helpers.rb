@@ -13,7 +13,8 @@ class Tty
     def gray; bold 30 end
 
     def width
-      `/usr/bin/tput cols`.strip.to_i
+      #`/usr/bin/tput cols`.strip.to_i
+      80
     end
 
   private
